@@ -27,3 +27,8 @@ OpenCV 4.01 / C++
 
 ## Paper
 submit on IEEE ACCESS...
+
+## Follow-Up Research (GPU Acceleration)
+
+Use GPU acceleration(CUDA) to process 5.4 times faster
+https://github.com/jisuk500/Translunar-Dust-Detection-GPU-CUDA-/
