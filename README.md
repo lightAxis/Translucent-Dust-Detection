@@ -2,6 +2,11 @@
 
 Dust Detection using image of translunar glass surface with dust
 
+## Previous research
+
+Facade Contaminant detection & experiment optimiation code, using OpenCV, C++ YOLOv3
+
+https://github.com/jisuk500/Facade-Contaminant-Detection
 
 ## 2 stage structure
 
