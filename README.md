@@ -31,7 +31,7 @@ use mean-shift initial posision of grid to propose global maximum density area
 OpenCV 4.01 / C++
 
 ## Paper
-submit on IEEE ACCESS...
+Preparing
 
 ## Follow-Up Research (GPU Acceleration)
 
