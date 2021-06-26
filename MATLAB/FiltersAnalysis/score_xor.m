@@ -1,0 +1,8 @@
+function score = score_xor(detection_binary,mask_binary)
+
+score_binary = ~xor(detection_binary, mask_binary);
+sizes = size(score_binary);
+
+score = sum(score_binary(:) == true)/(sizes(1)*sizes(2));
+
+end

@@ -1,0 +1,17 @@
+%% 국룰
+clc;
+clear all;
+
+%% 메인
+all_result_imgs = {};
+
+image = imread('인조배경\bg_x1_dusted.png');
+[sobel_, prewitt_, canny_, median_,gauss_, image] = edgeDetection(image,medianfilterThresh,false);
+all_result_imgs{1} = [sobel_, prewitt_, canny_, median_,gauss_, image];
+
+%% 나머지
+
+function images = get_all_dusted_arbg()
+images = {};
+images{1} = 
+end

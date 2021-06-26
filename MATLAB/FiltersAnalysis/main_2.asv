@@ -1,0 +1,8 @@
+A = imread('ÃÔ¿µ»çÁøµé\»çÁø1_Èå¸²8.jpg');
+
+A_denoised = imnlmfilt(A);
+A_gray = rgb2gray(A_denoised);
+
+[generated_dust] = imgDustGenerate(size(A),127,71,[0 3],[1 5]);
+
+A_dusted = blendBackgroundWithDustMask()

@@ -1,0 +1,37 @@
+%% 국룰
+clear;
+clc;
+
+calc_ref = false;
+
+%% 이미지 처리
+
+A = imread("시편사진들2\레퍼런스1.jpg");
+A = imresize(A,[720,1280]);
+A_denoised = imnlmfilt(A,'DegreeOfSmoothing',10,'ComparisonWindowSize',7);
+A_gray = rgb2gray(A_denoised);
+figure(1)
+imshow(A_gray);
+
+[A_mmedian, A_medisizes] = modified_median_filter(A_gray);
+
+A_sub = A_denoised - A_mmedi;
+A_subinv = A_mmedi - A_denoised;
+A_merged = A_sub + A_subinv;
+
+resultImg = zeros(size(A_merged));
+diff = 30;
+
+for i=1:1:size(A_merged,1)
+    for j=1:1:size(A_merged,2)
+        px = A_merged(i,j);
+        if (px<diff)
+            resultImg(i,j) = 0;
+        else
+            resultImg(i,j) = 1;
+        end
+    end
+end
+
+figure(2)
+imshow(resultIm)

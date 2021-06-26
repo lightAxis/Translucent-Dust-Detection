@@ -1,0 +1,22 @@
+%% 국룰
+clc;
+clear all;
+
+%% 파라미터들
+
+image_size = [720 1280];
+path_full = '인조배경\';
+mask_path_full = 'DustGenerator';
+
+dust_mask_num = 1;
+
+%% 메인
+[bg_y1, bg_y2, bg_x1, bg_x2] = genTestBackground(image_size);
+
+imwrite(strcat(path_full,'bg_y1','.png'),'Mode','Lossless');
+imwrite(strcat(path_full,'bg_y2','.png'),'Mode','Lossless');
+imwrite(strcat(path_full,'bg_x1','.png'),'Mode','Lossless');
+imwrite(strcat(path_full,'bg_x2','.png'),'Mode','Lossless');
+
+mask = imread(strcat()
+
