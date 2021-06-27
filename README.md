@@ -1,4 +1,4 @@
-# Translunar-Dust-Detection
+# Translucent-Dust-Detection
 
 Dust Detection using image of translunar glass surface with dust
 
