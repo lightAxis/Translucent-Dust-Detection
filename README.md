@@ -36,4 +36,4 @@ Preparing
 ## Follow-Up Research (GPU Acceleration)
 
 Use GPU acceleration(CUDA) to process 5.4 times faster
-https://github.com/jisuk500/Translunar-Dust-Detection-GPU-CUDA-/
+https://github.com/lightAxis/Translunar-Dust-Detection-GPU-CUDA-/
